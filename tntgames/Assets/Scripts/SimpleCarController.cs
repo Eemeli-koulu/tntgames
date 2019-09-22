@@ -20,6 +20,7 @@ public class SimpleCarController : MonoBehaviour
 
     public void Acclerate()
     {
+        Debug.Log(frontPassengerW.motorTorque);
         frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;
 
@@ -60,6 +61,6 @@ public class SimpleCarController : MonoBehaviour
     public Transform frontDriverT, frontPassangerT;
     public Transform backDriverT, backPassangerT;
     public float maxSteerAngle = 30;
-    public float motorForce = 50;
+    public float motorForce = 500;
 
 }
