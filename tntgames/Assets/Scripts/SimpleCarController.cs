@@ -20,7 +20,6 @@ public class SimpleCarController : MonoBehaviour
 
     public void Acclerate()
     {
-        Debug.Log(frontPassengerW.motorTorque);
         frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;
 
