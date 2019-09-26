@@ -3,22 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
+
 public class RaceStarts : MonoBehaviour
 {
-    public UnityEvent start;
+    public UnityEvent OnGameStart;
 
     void OnCollisionEnter(Collision col)
     {
-        start.Invoke();
+
+        OnGameStart.Invoke();
+        
     }
 
     void Start()
     {
-        
+
     }
 
+    
     void Update()
     {
         
     }
+
 }
