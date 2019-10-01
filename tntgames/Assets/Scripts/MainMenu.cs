@@ -15,4 +15,5 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Application quit");
         Application.Quit();
     }
+ 
 }
