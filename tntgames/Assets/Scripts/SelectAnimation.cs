@@ -7,9 +7,12 @@ public class SelectAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerEnter(PointerEventData eventData)
     {
         Animator animator = GetComponent<Animator>();
-        if(animator != null)
+        if (animator != null)
         {
-            animator.Play("MenuButtonAnimation");
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("MenuButtonAnimation"))
+            {
+                animator.Play("MenuButtonAnimation");
+            }
         }
     }
 
