@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     public float timeStart;
     public Text textBox;
 
-    bool timerActive = false;
+    public bool timerActive = false;
 
     void start()
     {

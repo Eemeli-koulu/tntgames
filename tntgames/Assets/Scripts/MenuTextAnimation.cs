@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-public class SelectAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class MenuTextAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -19,7 +19,7 @@ public class SelectAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerExit(PointerEventData eventData)
     {
         Debug.Log("Pointer Exit");
-
+        
     }
 
 }
